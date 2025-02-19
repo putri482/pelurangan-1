@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<p>Toturial javascript!<p/>");
+        document.write("<p>Toturial javascript!<p/>");
+        document.write("<p>Toturial javascript!<p/>");
+        document.write("<p>Toturial javascript!<p/>");+
+        document.write("<p>Toturial javascript!<p/>");
+        document.write("<p>Toturial javascript!<p/>");
+        document.write("<p>Toturial javascript!<p/>");
+        document.write("<p>Toturial javascript!<p/>");
+        document.write("<p>Toturial javascript!<p/>");
+        decoment.write("<p>Toturial javascript!<p/>")
+   
+        for(let i = 0; i < 10; i++){
+            document.write("<p>Perulangan ke-" + i + "</p>");
+         }
+       
+        for(counter = 0; counter < 50; counter+=2){
+            document.write("<p>Perulangan ke-"+counter+"</p>");
+        }
+   
+        for(counter = 10; counter < 50; counter+=2){
+            document.write("<p>Perulangan ke "+counter+"</p>");
+        }
+
+       var ulangi = confrim("Apakah anda mau mengulang?");
+       var counter = 0;
+       
+       while(ulangi){
+           var jawab = confrim("Apakah anda mau mengulangi?")
+           counter++;
+           if(jawab == false){
+                ulangi = false;
+           } 
+        }
+        document.write("Perulangan sudah dilakukan sebanyak "+ counter +" kali");
+
+
+        var ulangi = confrim("Apakah anda mau mengulangi?");
+        var counter = 0;
+
+        while(ulangi){
+            counter++;
+            ulangi = confrim("Apakah anda mau mengulang?");
+        }
+
+        document.write("Perulangan sudah dilakukan sebanyak "+ counter +" kali");
+
+        var languages = ["Javascrip", "HTML", "CSS", Typescript]
+
+        for(i = o; i < languages.length; i++){
+            document.write("<br/>" +i+". "+ languages[i] + "<br/>");
+        }
+
+        // kita punya array seperti berikut
+        var days = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"];
+
+        // kemudian kita tampilkan semua hari
+        // dengan menggunakan method foreach
+        days.forEach(function(day){
+            document.write("<p>" + day + "</p>");
+        })
+
+        // kita punya array seperti berikut 
+        var bulan = ["januari", "februari", "maret", "april", "mei", "juni"];
+        
+        // kemudian kita tampilkan semua bulan 
+        // dengan menggunakan method foreach
+        bulan.foreach((bulan2) =>  {
+            document.write("<p>" + bulan2 + "</p>");
+        });
+        
+        for(let i = 0; i < 20;  i++){
+            document.write("Ulangi kalimat ini!");
+         }
+        
+        document.write("Ulangi kalimat ini! ". repeat(20));
+
+        for(let i = 0; i < 10; i++){
+           for(let j = 0; j <10; j++){
+               document.write("<p>Perulangan ke " + i + "," + j + "</p>");
+           }
+        }
+            
+        var ulanglah = confirm("klik Ok!");
+        var counter = 0;
+
+        while (ulanglah) {
+            counter++;
+            var bintang = "*".repeat(counter) + "<br>";
+            document.write(counter + ": " + bintang);
+            ulanglah = confirm("Klik ok untuk menambah bintang, klik cancel untuk berhenti");
+         }
+</script>
+</body>
+</html>
